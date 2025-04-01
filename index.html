@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer ></script>
+    <title>Newsletter sign-up-form-with-success-message </title>
+</head>
+<body>
+    <div class="popup-container">
+        <div class="success">
+            <img src="./images/icon-success.svg" class="icon-success" alt="Success-icon">
+            <h2 class="heading-success"><span class="span">Thanks for</span>subscribing!</span></h2>
+            <p class="confirmation-text"><!-- This is where confirmation text will appear--></p>
+            <button class="btn-dismiss">Dismiss message</button>
+        </div>
+    </div>
+    <main class="container">
+        <div class="form-wrapper">
+            <div class="content">
+                <h1 class="heading">Stay Updated!</h1>
+                <p class="para-text">
+                    Join 60,000+ product manager receiving monthly updates on:
+                </p>
+                <ul class="updated">
+                    <li class="bullets">
+                        <input type="checkbox" name="updates" checked />
+                        <span class="bullet-text">Product discovery and buidling what matters</span>
+                    </li>
+                    <li class="bullets">
+                        <input type="checkbox" name="updates" checked />
+                        <span class="bullet-text">Measuring to ensure updates are a success</span>
+                    </li>
+                    <li class="bullets">
+                        <input type="checkbox" name="updates" checked />
+                        <span class="bullet-text">And much more!</span>
+                    </li>
+                </ul>
+                <form action=""class="signup-form">
+                    <label for="email" class="emailLabel">Email Address <span class="alert">Valid email required</span></label>
+                    <input type="text" id="email" name="email" placeholder="email@company.com" />
+                    <button type="submit" class="btn-subscribe">Subscribe to monthly newsletter</button>
+                </form>
+            </div>
+            <div class="image">
+                <picture> 
+                    <source media="{max-width: 768px}" srcset="./illustration-sign-up-mobile.svg" />
+                    <source media="{min-width: 768px}" srcset="./illustration-sign-up-desktop.svg" />
+                     <img src="./images/illustration-sign-up-desktop.svg" class="img" alt="94 percent"> 
+                </picture>
+            </div>
+        </div>
+    </main>
+ 
+</body>
+</html>
